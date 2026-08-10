@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Уголёк — кофейня ручной обжарки</title>
+<meta name="description" content="Уголёк — уютная кофейня ручной обжарки. Меню, атмосфера, часы работы.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">Угол<span class="nav__logo-accent">ё</span>к</a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#story" class="nav__link">О нас</a>
+      <a href="#menu" class="nav__link">Меню</a>
+      <a href="#atmosphere" class="nav__link">Атмосфера</a>
+      <a href="#hours" class="nav__link">Часы и адрес</a>
+    </nav>
+
+    <a href="#menu" class="btn btn--small nav__cta">Смотреть меню</a>
+
+    <button class="nav__burger" id="navBurger" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero__text">
+      <p class="eyebrow">Обжарка каждый вторник</p>
+      <h1 class="hero__title">
+        Кофе, в который<br>
+        вложена
+        <span class="hero__underline">
+          душа
+          <svg class="hero__scribble" viewBox="0 0 220 20" aria-hidden="true">
+            <path d="M2 14C40 4 90 2 110 10C130 18 180 6 218 8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </h1>
+      <p class="hero__subtitle">
+        Маленькая обжарочная и кофейня в центре города. Сами закупаем зелёное
+        зерно, сами обжариваем, сами варим. Заходите на чашку — и на разговор.
+      </p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--primary">Смотреть меню</a>
+        <a href="#hours" class="btn btn--ghost">Как нас найти</a>
+      </div>
+
+      <ul class="hero__stats">
+        <li><span>2019</span>год основания</li>
+        <li><span>12</span>сортов зерна</li>
+        <li><span>3</span>своих обжарщика</li>
+      </ul>
+    </div>
+
+    <div class="hero__card" aria-hidden="true">
+      <div class="roast-card">
+        <div class="roast-card__steam">
+          <svg viewBox="0 0 60 90" class="steam">
+            <path class="steam__path steam__path--1" d="M15 85C15 85 5 65 15 50C25 35 15 20 15 5" fill="none" stroke-width="3" stroke-linecap="round"/>
+            <path class="steam__path steam__path--2" d="M35 85C35 85 25 65 35 50C45 35 35 20 35 5" fill="none" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <svg class="roast-card__cup" viewBox="0 0 140 110" aria-hidden="true">
+          <path d="M20 30h80v35a40 40 0 0 1-80 0V30Z" fill="none" stroke="currentColor" stroke-width="4"/>
+          <path d="M100 42h10a14 14 0 0 1 0 28h-10" fill="none" stroke="currentColor" stroke-width="4"/>
+          <line x1="10" y1="95" x2="110" y2="95" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <div class="roast-card__label">
+          <p class="roast-card__row"><span>ORIGIN</span>Эфиопия, Йиргачеффе</p>
+          <p class="roast-card__row"><span>ROAST</span>Светлая — средняя</p>
+          <p class="roast-card__row"><span>NOTES</span>карамель, цитрус, чай</p>
+          <p class="roast-card__row"><span>ОБЖАРЕНО</span>на этой неделе</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STORY ===================== -->
+  <section class="section" id="story">
+    <p class="eyebrow">Как всё начиналось</p>
+    <div class="story">
+      <div class="story__text">
+        <h2 class="section__title">Из гаража — в свою обжарочную</h2>
+        <p>
+          Уголёк начинался с домашней обжарочной машины на балконе и трёх
+          сортов зерна для друзей. Спустя пять лет — своя обжарочная,
+          постоянные гости и очередь за свежими булочками по утрам в выходные.
+        </p>
+        <p>
+          Мы до сих пор пробуем каждую новую партию всей командой, прежде чем
+          она попадёт в меню. Если зерно не понравилось нам — его не будет у вас.
+        </p>
+      </div>
+      <div class="story__gallery" aria-hidden="true">
+        <div class="photo photo--a"></div>
+        <div class="photo photo--b"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU (chalkboard) ===================== -->
+  <section class="section section--board" id="menu">
+    <div class="board">
+      <p class="eyebrow eyebrow--board">Меню</p>
+      <h2 class="section__title section__title--board">Что варим и печём</h2>
+
+      <div class="board__tabs" role="tablist" aria-label="Категории меню">
+        <button class="board__tab is-active" data-category="coffee" role="tab" aria-selected="true">Кофе</button>
+        <button class="board__tab" data-category="tea" role="tab" aria-selected="false">Чай</button>
+        <button class="board__tab" data-category="food" role="tab" aria-selected="false">Выпечка</button>
+      </div>
+
+      <ul class="menu-list" id="menuList" data-category="coffee">
+        <!-- Кофе -->
+        <li class="menu-item" data-cat="coffee">
+          <span class="menu-item__name">Эспрессо</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">160 ₽</span>
+        </li>
+        <li class="menu-item" data-cat="coffee">
+          <span class="menu-item__name">Американо</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">190 ₽</span>
+        </li>
+        <li class="menu-item" data-cat="coffee">
+          <span class="menu-item__name">Капучино</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">230 ₽</span>
+        </li>
+        <li class="menu-item" data-cat="coffee">
+          <span class="menu-item__name">Флэт уайт</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">250 ₽</span>
+        </li>
+        <li class="menu-item" data-cat="coffee">
+          <span class="menu-item__name">Раф на кокосовом</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">290 ₽</span>
+        </li>
+        <li class="menu-item" data-cat="coffee">
+          <span class="menu-item__name">Фильтр (V60)</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">270 ₽</span>
+        </li>
+
+        <!-- Чай -->
+        <li class="menu-item" data-cat="tea" hidden>
+          <span class="menu-item__name">Чай улун молочный</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">210 ₽</span>
+        </li>
+        <li class="menu-item" data-cat="tea" hidden>
+          <span class="menu-item__name">Матча латте</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">280 ₽</span>
+        </li>
+        <li class="menu-item" data-cat="tea" hidden>
+          <span class="menu-item__name">Каркаде с имбирём</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">200 ₽</span>
+        </li>
+        <li class="menu-item" data-cat="tea" hidden>
+          <span class="menu-item__name">Чай с чабрецом</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">190 ₽</span>
+        </li>
+
+        <!-- Выпечка -->
+        <li class="menu-item" data-cat="food" hidden>
+          <span class="menu-item__name">Круассан классический</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">160 ₽</span>
+        </li>
+        <li class="menu-item" data-cat="food" hidden>
+          <span class="menu-item__name">Синнабон</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">220 ₽</span>
+        </li>
+        <li class="menu-item" data-cat="food" hidden>
+          <span class="menu-item__name">Чизкейк Баскский</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">260 ₽</span>
+        </li>
+        <li class="menu-item" data-cat="food" hidden>
+          <span class="menu-item__name">Ореховый пирог</span>
+          <span class="menu-item__dots"></span>
+          <span class="menu-item__price">240 ₽</span>
+        </li>
+      </ul>
+
+      <p class="board__note">— мелом, но не мелочи: цены могут немного меняться в зависимости от партии зерна —</p>
+    </div>
+  </section>
+
+  <!-- ===================== ATMOSPHERE ===================== -->
+  <section class="section" id="atmosphere">
+    <p class="eyebrow">Атмосфера</p>
+    <h2 class="section__title">Место, где хочется задержаться</h2>
+
+    <div class="gallery" aria-hidden="true">
+      <div class="gallery__item gallery__item--1"></div>
+      <div class="gallery__item gallery__item--2"></div>
+      <div class="gallery__item gallery__item--3"></div>
+      <div class="gallery__item gallery__item--4"></div>
+      <div class="gallery__item gallery__item--5"></div>
+    </div>
+
+    <blockquote class="quote">
+      «Прихожу сюда каждое утро уже два года — тут узнают заказ по лицу
+      и всегда находят свободный стол у окна.»
+      <cite>— Марина, постоянная гостья</cite>
+    </blockquote>
+  </section>
+
+  <!-- ===================== HOURS & LOCATION ===================== -->
+  <section class="section" id="hours">
+    <p class="eyebrow">Часы и адрес</p>
+    <div class="hours">
+      <div class="hours__card">
+        <h3>Часы работы</h3>
+        <ul class="hours__list">
+          <li><span>Пн — Пт</span><span>8:00 — 21:00</span></li>
+          <li><span>Сб — Вс</span><span>9:00 — 22:00</span></li>
+        </ul>
+      </div>
+      <div class="hours__card">
+        <h3>Адрес</h3>
+        <p class="hours__address">ул. Кузнечная, 14<br>вход со двора, второй этаж</p>
+        <a href="#" class="hours__link">Построить маршрут →</a>
+      </div>
+      <div class="hours__card">
+        <h3>Мы на связи</h3>
+        <p class="hours__address">+7 (900) 123-45-67<br>hello@ugolek.coffee</p>
+        <a href="#" class="hours__link">Написать в Telegram →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p class="nav__logo footer__logo">Угол<span class="nav__logo-accent">ё</span>к</p>
+  <div class="footer__links">
+    <a href="#">Instagram</a>
+    <a href="#">Telegram</a>
+    <a href="#">Яндекс Карты</a>
+  </div>
+  <p class="footer__copy">© <span id="year"></span> Кофейня «Уголёк»</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
