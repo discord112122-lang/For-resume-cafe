@@ -190,9 +190,7 @@ a:focus-visible, button:focus-visible{
 .nav__burger.is-open span:nth-child(2){ opacity: 0; }
 .nav__burger.is-open span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
 
-/* =========================================================
-   HERO
-========================================================= */
+
 .hero{
   max-width: var(--container);
   margin: 0 auto;
@@ -255,7 +253,7 @@ a:focus-visible, button:focus-visible{
   font-weight: 600;
 }
 
-/* --- roast label card --- */
+
 .hero__card{ display: flex; justify-content: center; }
 
 .roast-card{
@@ -312,9 +310,6 @@ a:focus-visible, button:focus-visible{
   min-width: 108px;
 }
 
-/* =========================================================
-   STORY
-========================================================= */
 .story{
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -339,9 +334,7 @@ a:focus-visible, button:focus-visible{
 }
 .photo--b{ background: linear-gradient(160deg, #3E4A32, #6E7F53); }
 
-/* =========================================================
-   MENU / CHALKBOARD
-========================================================= */
+
 .section--board{ padding-top: 0; padding-bottom: 0; }
 
 .board{
@@ -416,9 +409,7 @@ a:focus-visible, button:focus-visible{
   text-align: center;
 }
 
-/* =========================================================
-   ATMOSPHERE / GALLERY
-========================================================= */
+
 .gallery{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -452,9 +443,6 @@ a:focus-visible, button:focus-visible{
   color: var(--text-muted-dark);
 }
 
-/* =========================================================
-   HOURS
-========================================================= */
 .hours{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -484,9 +472,7 @@ a:focus-visible, button:focus-visible{
 .hours__address{ color: var(--text-muted-dark); font-size: 0.92rem; margin: 0 0 16px; }
 .hours__link{ color: var(--sage); font-size: 0.88rem; font-weight: 600; }
 
-/* =========================================================
-   FOOTER
-========================================================= */
+
 .footer{
   max-width: var(--container);
   margin: 0 auto;
@@ -504,9 +490,6 @@ a:focus-visible, button:focus-visible{
 .footer__links a:hover{ color: var(--cream); }
 .footer__copy{ color: var(--text-muted-dark); font-size: 0.82rem; margin: 0; }
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
 @media (max-width: 900px){
   .hero{ grid-template-columns: 1fr; padding-top: 40px; }
   .hero__card{ order: -1; }

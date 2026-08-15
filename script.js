@@ -1,11 +1,6 @@
-// =========================================================
-// Год в футере
-// =========================================================
+
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// =========================================================
-// Скролл: фон навбара + активная ссылка
-// =========================================================
 const nav = document.getElementById('nav');
 const navLinks = document.querySelectorAll('.nav__link');
 const sections = document.querySelectorAll('section[id]');
@@ -28,9 +23,6 @@ function onScroll(){
 document.addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
-// =========================================================
-// Мобильное меню
-// =========================================================
 const burger = document.getElementById('navBurger');
 const navLinksWrap = document.getElementById('navLinks');
 
@@ -48,9 +40,6 @@ navLinksWrap.querySelectorAll('a').forEach(link => {
   });
 });
 
-// =========================================================
-// Плавное появление секций при скролле
-// =========================================================
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting){
@@ -64,9 +53,7 @@ document.querySelectorAll('.section').forEach(section => {
   revealObserver.observe(section);
 });
 
-// =========================================================
-// Переключение категорий меню (Кофе / Чай / Выпечка)
-// =========================================================
+
 const tabs = document.querySelectorAll('.board__tab');
 const menuItems = document.querySelectorAll('.menu-item');
 
